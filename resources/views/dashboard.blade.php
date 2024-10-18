@@ -47,7 +47,7 @@
                     <div class="card">
                         <div class="p-6">
                             <h2 class="font-bold text-lg mb-2">Employees on weekend</h2>
-                            <ul class="flex gap-6">
+                            <ul class="grid grid-cols-2 sm:grid-cols-4 gap-6">
                                 @forelse ($employees as $employee)
                                     <li>{{ $employee->name . ' (' . $employee->emp_id . ')' }}</li>
                                 @empty
